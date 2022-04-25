@@ -4,11 +4,11 @@ class Forecast
               :hourly_weather,
               :daily_weather
 
-  def initialize(time_values)
+  def initialize(data)
     @id = nil
-    @current_weather = current(time_values[:current_weather])
-    @hourly_weather = hourly(time_values[:hourly_weather])
-    @daily_weather = daily(time_values[:daily_weather])
+    @current_weather = current(data[:current_weather])
+    @hourly_weather = hourly(data[:hourly_weather])
+    @daily_weather = daily(data[:daily_weather])
   end
 
   def current(data)
