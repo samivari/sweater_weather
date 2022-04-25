@@ -1,4 +1,4 @@
-require 'Rails_helper'
+require 'rails_helper'
 
 RSpec.describe 'Forecast request ' do
   it 'returns the forecast for a specific area in a JSON response', :vcr do
@@ -28,9 +28,9 @@ RSpec.describe 'Forecast request ' do
     expect(parsed['data']['attributes']['current_weather']).to have_key('visibility')
     expect(parsed['data']['attributes']['current_weather']).to have_key('conditions')
     expect(parsed['data']['attributes']['current_weather']).to have_key('icon')
-
     expect(parsed['data']['attributes']['daily_weather']).to be_an(Array)
     expect(parsed['data']['attributes']['daily_weather'].length).to eq(5)
+
     parsed['data']['attributes']['daily_weather'].each do |day|
       expect(day).to have_key('date')
       expect(day).to have_key('sunrise')
@@ -40,8 +40,8 @@ RSpec.describe 'Forecast request ' do
       expect(day).to have_key('conditions')
       expect(day).to have_key('icon')
     end
-
     expect(parsed['data']['attributes']['hourly_weather']).to be_an(Array)
+
     parsed['data']['attributes']['hourly_weather'].each do |hour|
       expect(hour).to have_key('time')
       expect(hour).to have_key('temperature')
