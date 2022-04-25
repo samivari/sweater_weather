@@ -1,6 +1,16 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/direction_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/direction_service.rb": {
         "lines": [
           1,
@@ -134,18 +144,6 @@
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/direction_facade.rb": {
-        "lines": [
           0,
           0,
           0,
@@ -346,6 +344,6 @@
         }
       }
     },
-    "timestamp": 1650901681
+    "timestamp": 1650901769
   }
 }
