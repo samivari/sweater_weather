@@ -1,7 +1,8 @@
 class Background
-  attr_reader :location, :image_url, :source, :author, :logo
+  attr_reader :location, :image_url, :source, :author, :logo, :id
 
   def initialize(results)
+    @id = nil
     @location = results[:results][1][:user][:location]
     @image_url = results[:results][1][:urls][:full]
     @source = results[:results][1][:links][:self]
