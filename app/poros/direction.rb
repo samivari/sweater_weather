@@ -2,6 +2,6 @@ class Direction
   attr_reader :travel_time
 
   def initialize(results)
-    @travel_time = results[:route][:formattedTime]
+    @travel_time = results[:route][:realTime]
   end
 end
