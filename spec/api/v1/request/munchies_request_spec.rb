@@ -6,7 +6,7 @@ RSpec.describe 'Munchies request ' do
     expect(response).to be_successful
     parsed = JSON.parse(response.body)
     expect(parsed['data']['id']).to eq('null')
-    expect(parsed['data']['type']).to be_a(Hash)
+    expect(parsed['data']['type']).to eq('munchie')
     expect(parsed['data']['attributes']).to have_key('destination_city')
     expect(parsed['data']['attributes']).to have_key('travel_time')
     expect(parsed['data']['attributes']).to have_key('forecast')
