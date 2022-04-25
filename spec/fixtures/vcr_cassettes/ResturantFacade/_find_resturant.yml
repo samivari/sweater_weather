@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=Pueblo,Co&open_at=1650902492&term=Chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - api_key
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-canary--uswest2-65dcd9b89d-vk96x; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4988'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2022-04-26T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 53a5ef0a9a0298af
+      X-Cloudmap:
+      - routing_uswest2
+      X-Proxied:
+      - 10-69-152-12-uswest2bprod
+      X-Extlb:
+      - 10-69-152-12-uswest2bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 25 Apr 2022 16:35:07 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8223-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "M4MwxQAA58B7ENV8ootI-w", "alias": "kans-kitchen-pueblo",
+        "name": "Kan''s Kitchen", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/RxBfJ3hjre51jCpXqNlfjA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kans-kitchen-pueblo?adjust_creative=Zx_l2OsfgOyv2VRF7_7VcA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Zx_l2OsfgOyv2VRF7_7VcA",
+        "review_count": 24, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.2401504516602, "longitude":
+        -104.643249511719}, "transactions": ["delivery"], "price": "$", "location":
+        {"address1": "1620 S Prairie Ave", "address2": null, "address3": null, "city":
+        "Pueblo", "zip_code": "81005", "country": "US", "state": "CO", "display_address":
+        ["1620 S Prairie Ave", "Pueblo, CO 81005"]}, "phone": "+17195660209", "display_phone":
+        "(719) 566-0209", "distance": 6975.853345952662}], "total": 13, "region":
+        {"center": {"longitude": -104.5733642578125, "latitude": 38.27035217485165}}}'
+  recorded_at: Mon, 25 Apr 2022 16:35:07 GMT
+recorded_with: VCR 6.1.0
