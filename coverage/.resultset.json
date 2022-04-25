@@ -1,6 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/controllers/api/v1/munchies_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/direction_facade.rb": {
         "lines": [
           1,
@@ -28,6 +53,194 @@
           null,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/location_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/location_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/location.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/forecast_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/forecast_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/forecast.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          48,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/resturant_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/resturant_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/resturant.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/samanthaivari/turing/3mod/sweater_weather/app/serializers/munchie_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -125,77 +338,6 @@
         "branches": {
         }
       },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/location_facade.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/resturant_facade.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/facades/forecast_facade.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/resturant.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/location.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/background.rb": {
         "lines": [
           0,
@@ -214,74 +356,7 @@
         "branches": {
         }
       },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/poros/forecast.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/samanthaivari/turing/3mod/sweater_weather/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0
@@ -326,54 +401,6 @@
         "branches": {
         }
       },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/location_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/resturant_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/samanthaivari/turing/3mod/sweater_weather/app/services/forecast_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/samanthaivari/turing/3mod/sweater_weather/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -395,6 +422,6 @@
         }
       }
     },
-    "timestamp": 1650905043
+    "timestamp": 1650909622
   }
 }
