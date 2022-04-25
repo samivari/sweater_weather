@@ -1,5 +1,5 @@
 require 'rails_helper'
-RSpec.describe 'Location Poro' do
+RSpec.describe 'Direction Poro' do
   it 'takes JSON response and create ruby object', :vcr do
     data = DirectionService.get_travel_time('Denver,CO', 'Pueblo,CO')
     direction = Direction.new(data)
