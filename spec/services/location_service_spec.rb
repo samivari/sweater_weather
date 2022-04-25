@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Location Service', :vcr do
+RSpec.describe 'Location Service' do
   it 'returns longitude and lattitude', :vcr do
     location = LocationService.get_coords('Denver,CO')
     expect(location).to be_a Hash
