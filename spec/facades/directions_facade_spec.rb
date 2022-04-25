@@ -1,8 +1,9 @@
 require 'rails_helper'
 RSpec.describe DirectionFacade do
   it '.find_travel_time', :vcr do
-    travel_time = DirectionFacade.find_travel_time('Denver,Co', 'Pueblo,Co')
+    direction = DirectionFacade.find_travel_time('Denver,Co', 'Pueblo,Co')
 
-    expect(travel_time).to be_a(Direction)
+    expect(direction).to be_a(Direction)
+    expect(direction.travel_time).to eq('01:45:23')
   end
 end
