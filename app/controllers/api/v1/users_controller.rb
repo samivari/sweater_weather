@@ -2,7 +2,12 @@ class Api::V1::UsersController < ApplicationController
   def create
     params[:user] = JSON.parse(request.raw_post)
     user = User.new(user_params)
-    render(json: UserSerializer.new(user), status: :created)
+    if user.save
+      render(json: UserSerializer.new(user), status: :created)
+    else
+      render json: { status: 400, message: user.errors.full_messages.to_sentence.to_s, data: user.errors },
+             status: :bad_request
+    end
   end
 
   private
