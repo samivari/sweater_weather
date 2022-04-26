@@ -95,12 +95,11 @@ RSpec.describe 'user registration' do
     }
     post '/api/v1/users', headers: headers, params: user_params.to_json
 
-    #  expect(response).to_not be_successful
+    expect(response).to_not be_successful
 
     parsed = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'
-    binding.pry
+
     expect(parsed[:status]).to eq(400)
-    expect(parsed[:message]).to eq("Password confirmation can't be blank")
+    expect(parsed[:message]).to eq('Email is invalid')
   end
 end
