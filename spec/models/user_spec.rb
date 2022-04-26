@@ -16,5 +16,11 @@ RSpec.describe User, type: :model do
       expect(user).to have_attributes(password_confirmation: 'password')
       expect(user).to have_attribute(:api_key)
     end
+
+    it 'validates email correctly' do
+      user = User.new(email: 'saml.com', password: 'password', password_confirmation: 'password')
+      expect(user.save).to eq(false)
+      expect(user.errors.messages[:email][0]).to eq('is invalid')
+    end
   end
 end
