@@ -1,7 +1,8 @@
 class RoadTrip
-  attr_reader :start_city, :end_city, :travel_time, :weather
+  attr_reader :start_city, :end_city, :travel_time, :weather, :id
 
   def initialize(forecast, direction, origin, destination)
+    @id = nil
     @start_city = origin
     @end_city = destination
     @travel_time = route_verify(direction)

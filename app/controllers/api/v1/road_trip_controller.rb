@@ -7,7 +7,7 @@ class Api::V1::RoadTripController < ApplicationController
 
     if user.present?
       road_trip = RoadTripFacade.find_road_trip(params[:origin], params[:destination])
-      render = render json: RoadTripSerializer.serialize_road_trip(road_trip)
+      render = render json: RoadTripSerializer.new(road_trip)
     else
       render json: { status: 401, message: 'No Access - bad API key' }, status: 401
     end
