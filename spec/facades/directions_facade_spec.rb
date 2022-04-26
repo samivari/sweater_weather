@@ -4,6 +4,6 @@ RSpec.describe DirectionFacade do
     direction = DirectionFacade.find_travel_time('Denver,Co', 'Pueblo,Co')
 
     expect(direction).to be_a(Direction)
-    expect(direction.travel_time).to eq(6544)
+    expect(direction.travel_time).to eq(6603)
   end
 end

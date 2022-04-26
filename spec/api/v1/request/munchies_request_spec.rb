@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Munchies request ' do
-  it 'returns a a resturant for a specific area in a JSON response', :vcr do
+  xit 'returns a a resturant for a specific area in a JSON response', :vcr do
     get '/api/v1/munchies?start=denver,co&destination=pueblo,co&food=chinese'
     expect(response).to be_successful
     parsed = JSON.parse(response.body)
