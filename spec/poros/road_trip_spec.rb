@@ -9,7 +9,7 @@ RSpec.describe RoadTrip do
       expect(roadtrip).to be_a(RoadTrip)
       expect(roadtrip.end_city).to eq('pueblo,co')
       expect(roadtrip.start_city).to eq('denver,co')
-      expect(roadtrip.travel_time).to eq('01:48:50')
+      expect(roadtrip.travel_time).to eq('01:50:10')
       expect(roadtrip.weather).to be_a Hash
       expect(roadtrip.weather).to have_key(:time)
       expect(roadtrip.weather).to have_key(:temperature)

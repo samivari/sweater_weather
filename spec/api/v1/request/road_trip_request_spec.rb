@@ -22,8 +22,8 @@ RSpec.describe 'road trip request' do
       expect(parsed[:data][:type]).to eq('roadtrip')
       expect(parsed[:data][:attributes][:start_city]).to eq('Denver,CO')
       expect(parsed[:data][:attributes][:end_city]).to eq('Pueblo,CO')
-      expect(parsed[:data][:attributes][:travel_time]).to eq('01:49:57')
-      expect(parsed[:data][:attributes][:weather][:temperature]).to eq(62.98)
+      expect(parsed[:data][:attributes][:travel_time]).to eq('01:50:09')
+      expect(parsed[:data][:attributes][:weather][:temperature]).to eq(68.2)
       expect(parsed[:data][:attributes][:weather][:conditions]).to eq('scattered clouds')
     end
   end

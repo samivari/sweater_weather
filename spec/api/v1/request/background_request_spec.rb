@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'Forecast request ' do
-  it 'returns the forecast for a specific area in a JSON response', :vcr do
+RSpec.describe 'background request ' do
+  it 'returns url for a background image in a JSON response', :vcr do
     get '/api/v1/backgrounds?location=denver,co'
     expect(response).to be_successful
     parsed = JSON.parse(response.body)

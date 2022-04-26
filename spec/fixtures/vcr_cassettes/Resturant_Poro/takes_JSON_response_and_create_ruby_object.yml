@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Dailylimit:
-      - '5000'
-      Ratelimit-Remaining:
-      - '4998'
-      Server:
-      - envoy
       Ratelimit-Resettime:
       - '2022-04-27T00:00:00+00:00'
-      X-Routing-Service:
-      - routing-main--uswest2-8589d68894-5qgth; site=public_api_v3
       X-B3-Sampled:
       - '0'
+      X-Routing-Service:
+      - routing-main--uswest2-8589d68894-rlvhb; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
       X-Zipkin-Id:
-      - 9a81a65e17e539ce
+      - 97c385686675a74c
+      Ratelimit-Remaining:
+      - '4986'
       X-Cloudmap:
       - routing_uswest2
       X-Proxied:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-130-205-uswest2bprod
       X-Extlb:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-130-205-uswest2bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 26 Apr 2022 17:18:45 GMT
+      - Tue, 26 Apr 2022 19:24:28 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8276-DEN
+      - cache-den8263-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -75,5 +75,5 @@ http_interactions:
         ["1620 S Prairie Ave", "Pueblo, CO 81005"]}, "phone": "+17195660209", "display_phone":
         "(719) 566-0209", "distance": 6975.853345952662}], "total": 13, "region":
         {"center": {"longitude": -104.5733642578125, "latitude": 38.27035217485165}}}'
-  recorded_at: Tue, 26 Apr 2022 17:18:45 GMT
+  recorded_at: Tue, 26 Apr 2022 19:24:27 GMT
 recorded_with: VCR 6.1.0
