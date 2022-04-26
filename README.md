@@ -115,7 +115,7 @@ Response:
 ```
 
 ## Development setup
-```ruby 2.7.2```
+```ruby 2.7.4```
 ```rails 5.2.6```
 ## Gems
 ![pry v badge](https://img.shields.io/gem/v/pry?color=blue&label=pry)
