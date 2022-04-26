@@ -24,7 +24,7 @@ RSpec.describe 'user registration' do
   end
 
   describe 'sad path' do
-    it 'registers a user from request  no PW match' do
+    it 'no PW match' do
       user_params = {
         "email": 'whatever@example.com',
         "password": 'password',
@@ -45,7 +45,7 @@ RSpec.describe 'user registration' do
     end
   end
 
-  it 'registers a user from request  nil PW' do
+  it ' nil PW' do
     user_params = {
       "email": 'whatever@example.com',
       "password": 'password',
@@ -64,7 +64,8 @@ RSpec.describe 'user registration' do
     expect(parsed[:status]).to eq(400)
     expect(parsed[:message]).to eq("Password confirmation can't be blank")
   end
-  it 'registers a user from request  no PW' do
+
+  it 'no PW' do
     user_params = {
       "email": 'whatever@example.com',
       "password": ' ',
@@ -83,7 +84,8 @@ RSpec.describe 'user registration' do
     expect(parsed[:status]).to eq(400)
     expect(parsed[:message]).to eq("Password confirmation can't be blank")
   end
-  it 'registers a user from request invalid email' do
+
+  it 'invalid email' do
     user_params = {
       "email": 'whateverexample.com',
       "password": 'password',
@@ -101,5 +103,44 @@ RSpec.describe 'user registration' do
 
     expect(parsed[:status]).to eq(400)
     expect(parsed[:message]).to eq('Email is invalid')
+  end
+
+  it ' no email address provided' do
+    user_params = {
+      "email": ' ',
+      "password": 'password',
+      "password_confirmation": 'password'
+    }
+    headers = {
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json'
+    }
+    post '/api/v1/users', headers: headers, params: user_params.to_json
+
+    expect(response).to_not be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:status]).to eq(400)
+    expect(parsed[:message]).to eq("Email can't be blank and Email is invalid")
+  end
+
+  it ' duplicate user' do
+    user_params = {
+      "email": 'whatever@example.com',
+      "password": 'password',
+      "password_confirmation": 'password'
+    }
+    headers = {
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json'
+    }
+    post '/api/v1/users', headers: headers, params: user_params.to_json
+
+    post '/api/v1/users', headers: headers, params: user_params.to_json
+
+    expect(response).to_not be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:status]).to eq(400)
+    expect(parsed[:message]).to eq('Email has already been taken')
+    expect(parsed[:message]).to be_a(String)
   end
 end
