@@ -5,6 +5,6 @@ RSpec.describe 'Direction Poro' do
     direction = Direction.new(data)
 
     expect(direction).to be_a(Direction)
-    expect(direction.travel_time).to eq(6560)
+    expect(direction.travel_time).to eq(6609)
   end
 end
