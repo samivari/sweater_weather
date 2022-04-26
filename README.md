@@ -37,7 +37,6 @@ spec/poros/forecast_spec.rb
 
 I reccomend using Postman for the requests, as it's easy to format a request by adding it to the "raw body" of a 
 POST request. 
-Never used Postman? [Check it out here.](https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a)
 ```
 hot tip: all post requests need to be sent with the JSON raw body!
 ```
